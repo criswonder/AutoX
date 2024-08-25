@@ -1,6 +1,23 @@
 
 buildscript {
     repositories {
+        mavenLocal()
+
+        maven { setUrl("https://maven.aliyun.com/nexus/content/groups/public/") }
+        maven {
+            setUrl("https://maven.aliyun.com/nexus/content/repositories/releases/")
+            name = "aliyun"
+        }
+        maven { setUrl("https://maven.aliyun.com/repository/public") }
+        maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { setUrl("https://maven.aliyun.com/repository/google") }
+        maven { setUrl("https://maven.aliyun.com/repository/jcenter") }
+        maven { setUrl("https://maven.aliyun.com/repository/central") }
+
+        maven { setUrl("https://maven.aliyun.com/nexus/content/repositories/releases") }
+        maven { setUrl("https://maven.aliyun.com/nexus/content/repositories/snapshots") }
+        maven { setUrl("https://developer.huawei.com/repo/") }
+
         google()
         mavenCentral()
         maven("https://www.jitpack.io")
