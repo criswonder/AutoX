@@ -1,5 +1,7 @@
 var global = this;
 
+1
+
 runtime.init();
 
 (function () {
