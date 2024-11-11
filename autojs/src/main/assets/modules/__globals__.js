@@ -61,7 +61,6 @@ module.exports = function (runtime, global) {
     global.waitForPackage = function (packageName, period) {
         ensureNonUiThread();
         period = period || 200;
-        sdf
         global.log("global.currentPackage()="+global.currentPackage());
         while (global.currentPackage() != packageName) {
             global.log("global.currentPackage()="+global.currentPackage());
